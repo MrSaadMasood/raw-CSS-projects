@@ -25,7 +25,7 @@ Make sure you have a modern web browser installed to view and interact with the 
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/MrSaadMasood/sample-projects.git
+    git clone https://github.com/MrSaadMasood/raw-CSS-projects.git
    ```
 
 2. Open the `index.html` file in your preferred web browser.
