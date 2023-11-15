@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+a{
+    text-decoration-line: none;
+    color: white;
+}
+/* navigation bar CSS */
+.navbar{
+    height: 4rem;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(209, 209, 209);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.navbar-logo{
+    height: 3rem;
+    width: 5rem;
+    border-radius: .8cap;
+    background-image: url(Images/logo.webp);
+    background-size: contain;
+    margin-left: 7rem;
+    margin-right: 55rem;
+}
+
+.navbar-login{
+    height: 2.1rem;
+    width: 5rem;
+    border: 1px solid #D71465;
+    border-radius:.8cap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D71465;
+    font-weight: 600;
+    font-size: .9rem;
+    
+}
+#login-text{
+    color: #D71465;
+}
+.navbar-signup{
+    height: 2.1rem;
+    width: 5rem;
+    border: 1px solid #D71465;
+    border-radius:.8cap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-left: 1.8rem;
+    background-color: #D71465;
+}
+
+.nav-location{
+    height: 2.3rem;
+    width: 5.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 1.8rem;
+}
+
+.nav-cart{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.3rem;
+}
+.loc{
+    margin-left: .5rem;
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+#arrowhead{
+    margin-left: .6rem;
+    font-size: 1rem;
+}
+
+/* navigation bar animations */
+
+
+.navbar-login:hover{
+    animation-name: size;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+.navbar-signup:hover{
+    animation-name: size;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+@keyframes size{
+    0% {transform: scale(1);}
+    100%{transform: scale(1.08);}
+}
+
+@keyframes divColor{
+    from{background-color: white;}
+    to{background-color: rgba(230, 116, 116, 0.1); border-radius: .8cap;}
+}
+@keyframes divColorCircle{
+    from{background-color: white;}
+    to{background-color: rgba(230, 116, 116, 0.1); border-radius: 50%;}
+}
+
+.nav-location:hover{
+    animation-name: divColor;
+    animation-duration: .15s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.nav-cart:hover{
+    animation-name: divColorCircle;
+    animation-duration: .15s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
+}
+
+/* navbar completed */
+
+.grid-no-1{
+    display: grid;
+    grid-template-columns: auto 41rem;
+    grid-template-rows: 39rem;
+    background-color: rgb(248, 248, 248);
+
+}
+#main-picture{
+    background-image: url(Images/mainPicture.webp);
+    background-size: cover;
+}
+.test-search{
+    height:31rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    left: 6rem;
+    top: 3rem
+}
+
+.responsive{
+    background-size: cover;
+
+}
+.text{
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    top: 3rem;
+}
+
+.search{
+    width: 49rem;
+    height: 5rem;
+    background-color: white;
+    border-radius:1rem ;
+    box-shadow: 5px 5px 15px rgb(209, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+}
+.adress-bar{
+    width: 40rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+
+}
+.input-bar{
+    width: 40rem;
+    height: 3.5rem;
+    border: .7px solid rgb(227, 227, 227);
+    border-radius: 1em;
+    font-size: 1rem;
+
+}
+.adress-icon{
+    position: relative;
+    right: 2rem;
+}
+
+.adress-search-button{
+    height: 3.3rem;
+    width: 7rem;
+    border: 1px solid #D71465;
+    border-radius:.8cap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: #D71465;
+}
+
+.adress-search-button:hover{
+    animation-name: size;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;   
+}
+
+/* second-section start */
+
+.second-section{
+    height: 4rem;
+    width: auto;
+    font-size: 2rem;
+    position: relative;
+    top: 6rem;
+    bottom: 10rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 2.1rem;
+    
+}
+
+.chef-image{
+    height: 30rem;
+    width: 100%;
+    position: relative;
+    top: 4rem; 
+    background-image: url(Images/chefImage.webp);
+    background-position: 50%;
+    background-size: cover ;
+    object-fit: cover;
+
+}
+
+.list-your-resturant-container{
+    width: 40rem;
+    height: 21rem;
+    background-color: white;
+    padding: 24px;
+    margin-left: 3rem;
+    position: relative;
+    bottom: 5rem;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 15px rgb(141, 140, 140);
+}
+.list-your-resturant{
+    width: 35rem;
+    height: 13rem;
+}
+.list-your-resturant-heading{
+    font-size: 1.5rem;
+}
+.list-your-resturant-des{
+    padding: 24px 0px;
+    line-height: 2.5rem;
+}
+.get-started{
+    height: 3rem;
+    width: 7rem;
+    border: 1px solid #D71465;
+    border-radius:.8cap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: #D71465;
+    
+}
+
+.get-started:hover{
+    animation-name: size;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+
+/* third seciton started */
+
+.third-section{
+    height: 4rem;
+    width: auto;
+    font-size: 2rem;
+    position: relative;
+    top: 2rem;
+    bottom: 10rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 2.1rem;
+}
+.grid-no-2{
+    display: grid;
+    grid-template-columns: 19.5rem 19.5rem 19.5rem 19.5rem;
+    grid-template-rows: 16rem 16rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 0rem 5rem;
+}
+
+.grid-2-item{
+    width: 19.5rem;
+    height: 16rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.city-grid-images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    transform: scale(1);
+    position: relative;
+    text-align: center;
+}
+
+.city-grid-images:hover{
+    transform: scale(1.1);
+}
+
+.cityname{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    margin-top: 12rem;
+    margin-left: 1rem;
+
+}
+
+
+/* footer started */
+
+
+
+.footer_social_links{
+    height: 8rem;
+    width: 90%;
+    position: relative;
+    top: 7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-top-color: rgb(220, 220, 220);
+    border-bottom-color: rgb(219, 219, 219);
+}
+
+.social_links{
+    height: 6rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.fblogo{
+    margin-left: 53rem;
+    margin-right: 1rem;
+    padding-left: 7rem;
+}
+
+
+/* footer list and copyrights */
+
+
+.footer_list{
+    height: 13rem;
+    width: 90%;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding: 2rem 0rem 2rem 0rem;
+    position: relative;
+    top: 7rem;
+
+}
+.inner_list_div{
+    height: 8rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    color: rgb(175, 174, 174);
+}
+.listitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+li{
+    font-size: .9rem;
+    list-style-type: none;
+    margin: 15px;
+
+}
+.copyright_logo{
+    font-size: .9rem;
+    position: relative;
+    bottom: 3rem;
+}
+
+.list_text{
+    text-align: center;
+    color: rgb(175, 174, 174);
+}
+
+
+.list_text:hover{
+    color: #D71465;
+}
